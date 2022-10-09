@@ -22,7 +22,7 @@ function paintToDo(newTodo){
     const span = document.createElement('span');
     const button = document.createElement('button');
     
-    button.innerText = 'x'
+    button.innerText = 'v'
     button.addEventListener('click', deleteToDo);
     li.id = newTodo.id;
     li.appendChild(span);
@@ -35,13 +35,19 @@ function handleToDoSubmit(event){
     event.preventDefault();
     const newTodo = toDoInput.value;
     toDoInput.value = '';
-    const newTodoObj = {
-        text: newTodo,
-        id: Date.now(),
+
+    if(newTodo === ''){
+        alert('ToDo를 작성해주세요.')
+    } else{
+        const newTodoObj = {
+            text: newTodo,
+            id: Date.now(),
+        }
+    
+        toDos.push(newTodoObj);
+        paintToDo(newTodoObj);
+        saveToDos();
     }
-    toDos.push(newTodoObj);
-    paintToDo(newTodoObj);
-    saveToDos();
 }
 
 toDoForm.addEventListener('submit', handleToDoSubmit);
