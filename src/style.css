@@ -1,0 +1,101 @@
+.hidden {
+    display: none;
+}
+
+#clock {
+    display: inline-block;
+    padding: 15px;
+    background-color: springgreen;
+    color: whitesmoke;
+    margin-left: 20px;
+    border-radius: 2rem;
+    font-size: 20px;
+}
+
+#weather {
+    display: inline-block;
+    padding: 15px;
+    background-color: lightseagreen;
+    color: whitesmoke;
+    font-size: 20px;
+    border-radius: 2rem;
+} 
+
+#log-out {
+    outline: 0px;
+    border: 0px;
+    background-color: dodgerblue;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    border-radius: 2rem;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+body {
+    background-size: cover;
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: bold;
+}
+
+#user-form {
+    text-align: center;
+}
+
+#user-form h1{
+    color: white;
+    font-size: 45px;
+    margin-top: 200px;
+}
+
+#user-form input[type=text]{
+    height: auto;
+    line-height: normal;
+    padding: .8em .5em;  
+    border: 3px solid green;
+}
+
+#todo-form input[type=text]{
+    height: auto;
+    line-height: normal;
+    padding: .8em .5em;  
+    border: 3px solid green;
+}
+
+#inSite {
+    text-align: center;
+    padding: 10px;
+}
+
+#inSite h2{
+    color: lemonchiffon;
+    font-size: 30px;
+}
+
+#inSite #todo-list {
+    display: inline-block;
+    background-color: lightyellow;
+    padding: 20px;
+    border-radius: 2rem;
+}
+
+#inSite #todo-list li{
+    list-style: none;
+    margin: 10px;
+    width: 150px;
+    text-align: left;
+}
+
+
+#inSite #todo-list li button{
+    float: right;
+}
+
+#quote {
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 100px;
+}

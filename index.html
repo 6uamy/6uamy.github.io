@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>6uamy TODO</title>
+</head>
+<body class="site-body">
+    <header>
+    <h2 id="clock">00:00:00</h2>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <button id="log-out">종료하기</button>
+</header>
+
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+
+    <form id="user-form">
+        <h1>Welcome! 6uamy ToDo Site</h1>
+        <input type="text" placeholder="닉네임을 정해주세요 :)" required maxlength="10"/>
+        <button class="hidden">생성</button>
+    </form>
+
+    <div id="inSite">
+        <h2 id="user-name"></h2>
+        <form id="todo-form">
+            <input type="text" placeholder="오늘 할 일은 무엇인가요?" />
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+    
+    <script src="src/index.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/user.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/quote.js"></script>
+</body>
+</html>
