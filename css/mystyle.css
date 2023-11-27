@@ -3,9 +3,45 @@
 body {
     background-color: rgb(33, 37, 42);
     color: white;
-    
+    margin-left: 50px;
+}
+
+#intro {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+li {
+    margin-bottom: 10px;
 }
 
 h1 {
     text-align: center;
+}
+
+div.project {
+    width: 80%;
+    display: flex;
+    margin-top: 100px;
+}
+
+div.left {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+}
+
+div.right {
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+}
+
+.tennisMarket {
+    border-radius: 25%;
 }
